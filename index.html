@@ -55,7 +55,7 @@
 						</li>
 
 						<li class="nav-item ">
-							<a href="#" class="nav-link disabled">
+							<a href="#search_inp_bar" class="nav-link" id="srchbrindex">
 								<i class="fas fa-search text-white"></i>
 							</a>
 						</li>
@@ -97,6 +97,35 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById('srchbrindex').addEventListener("click",event =>{
+				document.getElementById('search_inp_bar').classList.remove('d-none');
+				document.getElementById('search_inp_bar').classList.add('animate__animated');
+				document.getElementById('search_inp_bar').classList.add('animate__rotateIn');
+
+
+			});
+		</script>
+		<!-- form buscar index-->
+		<div class="text-center pt-3 mt-3 d-none" id="search_inp_bar">
+			<form>
+				<div class="form-group row">
+					<div class="col-sm-12 col-md-6 offset-md-3">
+						<input type="text" class="form-control" id="sr_barrs" placeholder="Product">
+					</div>
+				</div>
+			</form>
+			<div class="d-flex justify-content-center">
+				
+				<div class="tex-center bg-dark">
+					<a href="quesos.html" class="btn btn-dark">Ropa</a>
+					<a href="crema.html" class="btn btn-dark">Accesorios</a>
+					<a href="yogurt.html" class="btn btn-dark">Zapatos</a>
+				</div>
+				
 			</div>
 		</div>
 
