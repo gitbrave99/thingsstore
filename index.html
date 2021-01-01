@@ -41,7 +41,7 @@
 							<a class="nav-link text-white" href="nosotros.html">Nosotros</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="contacto.html">Contacto</a>
+							<a class="nav-link text-white" href="#contact_form_md" data-toggle="modal" data-target="#contact_form_md">Contacto</a>
 						</li>
 						<li class="nav-item ">
 							<a href="#" class="nav-link disabled">
@@ -619,6 +619,44 @@
 					</div>
 				</div>
 
+				<div class="modal fade" id="contact_form_md" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="mb-3">
+									<label for="in_name" class="form-label">Nombre</label>
+									<input type="text" class="form-control" id="in_name" aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="in_email" class="form-label">E-mail</label>
+									<input type="email" class="form-control" id="in_email" aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="in_email" class="form-label">Asunto</label>
+									<input type="text" class="form-control" id="in_email" aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="in_email" class="form-label">Descripción</label>
+									<div class="form-floating">
+										<textarea class="form-control" placeholder="Dejanos tu mensaje" id="floatingTextarea"></textarea>
+									</div>
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</div>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+			</div>
 
 
 				<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
