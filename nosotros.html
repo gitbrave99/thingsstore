@@ -3,35 +3,569 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<title>Nosotros</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<div id="app">
-		<h4>{{hole}}</h4>
 
-		<input type="text" v-model="numero">
-		<button type="button" v-on:click="addnumero(numero)"> add num</button>
-		<span>{{numero}}</span>
-		<ul>
-			<li v-for="n of arraynums">{{n}}</li>
-		</ul>
+	<div class="bg-dark">
+		<div class="container">
+			<!--Navbar -->
+			<nav class="mb-1 navbar navbar-expand-lg navbar-light ">
+				<a class="navbar-brand" href="#">
+
+					<img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/NAPSTER.png" height="40" class="d-inline-block align-top" alt="mdb logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ml-auto ">
+						<li class="nav-item active">
+							<a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="ropa.html">Ropa</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="accesorios.html">Accesorios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="zapatos.html">Zapatos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="contacto.html">Contacto</a>
+						</li>
+						<li class="nav-item ">
+							<a href="#" class="nav-link disabled">
+								<i class="far fa-heart text-white"> 0</i>
+							</a>
+						</li>
+						<li class="nav-item ">
+							<a href="#" class="nav-link disabled">
+								<i class="fas fa-shopping-cart text-white"> 0</i>
+							</a>
+						</li>
+
+						<li class="nav-item ">
+							<a href="#" class="nav-link disabled">
+								<i class="fas fa-search text-white"></i>
+							</a>
+						</li>
+
+						<li class="nav-item dropdown ">
+							<a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-user-alt"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item"  href="#loginmodal" data-toggle="modal" data-target="#loginmodal">Login</a>
+								<a class="dropdown-item" href="signupmodal" data-toggle="modal" data-target="#signupmodal">Sign Up</a>
+
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</div>
-	<script type="text/javascript">
-		var app= new Vue({
-			el:'#app',
-			data:{
-				hole:'el sentimiento original',
-				numero:'',
-				arraynums:[1,2,3]
-			},
-			methods:{
-				addnumero(dato){
-					if (datos) {}
-					this.arraynums.push(dato);
-				}
-			}
-		});
-	</script>
-</body>
-</html>
+
+<br><br>
+
+	<div class="container">
+		<!-- ----------------cards ------------------- -->
+		<div class="shadow-lg">
+
+			<div class="row no-gutters">
+				<div class="col-md-6">
+					<div class="card-body">
+						<h5 class="card-title text-center" style="border-bottom: 2px solid black;">Misión</h5>
+						<div class="d-flex justify-content-center">
+							<div class="mx-auto d-block line_teal4ps"> </div>
+						</div>
+						<p class="card-text text-justify">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis culpa fuga ipsa fugiat consequuntur error porro, atque id, iure, in unde praesentium aliquid maiores? Maiores maxime et soluta unde!
+						</p>
+						<p class="card-text text-justify">
+							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio, vel quasi corporis suscipit provident, sapiente tempore cum aliquam tempora molestias dolores sequi nulla possimus, quod, commodi in ut voluptatum molestiae!
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card-body">
+						<h5 class="card-title text-center" style="border-bottom: 2px solid black;">Visión</h5>
+						<div class="d-flex justify-content-center">
+							<div class="mx-auto d-block line_teal4ps"> </div>
+						</div>
+						<p class="card-text text-justify">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam molestiae totam repellat numquam quam inventore assumenda quaerat architecto reprehenderit vitae porro eaque molestias ad voluptates repudiandae eos, quod aut pariatur!
+						</p>
+						<p class="card-text text-justify">
+							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Optio, vel quasi corporis suscipit provident, sapiente tempore cum aliquam tempora molestias dolores sequi nulla possimus, quod, commodi in ut voluptatum molestiae!
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<br><br>
+
+		<div class="shadow-lg">
+			<div class="text-center">
+				<h1>Nuestra Historia</h1>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-md-6">
+					<div class="card-body">
+						<p class="card-text text-justify">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card-body">
+						<p class="card-text text-justify">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+
+	<!--FOOOTER -->
+	<div class="bg-dark">
+		<div class="container">
+			<!-- Footer -->
+			<footer class="page-footer font-small stylish-color-dark pt-4">
+
+				<!-- Footer Links -->
+				<div class="container text-center text-md-left">
+
+					<!-- Grid row -->
+					<div class="row">
+
+						<!-- Grid column -->
+						<div class="col-md-6 mt-md-0 mt-3">
+
+							<!-- Content -->
+							<h5 class="text-uppercase text-center text-light">Ubicación</h5>
+							<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1938.1637113611694!2d-89.2289306!3d13.6986087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63303f2266ced1%3A0x1305fab92194bef3!2sDistribuidora%20del%20Caribe!5e0!3m2!1ses-419!2ssv!4v1598929293075!5m2!1ses-419!2ssv"
+							width="100%" height="175px" frameborder="0" style="border-radius: 4px;" allowfullscreen="true" aria-hidden="false" tabindex="0">
+
+						</iframe>
+
+					</div>
+					<!-- Grid column -->
+
+					<hr class="clearfix w-100 d-md-none">
+
+					<!-- Grid column -->
+					<div class="col-12 col-md-2 mb-md-0 mb-3">
+
+						<!-- Links -->
+						<h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-muted">Pages</h5>
+
+						<ul class="list-unstyled">
+							<li>
+								<a href="ropa.html" class="text-light">Ropa</a>
+							</li>
+							<li>
+								<a href="accesorios.html" class="text-light">Accesorios</a>
+							</li>
+							<li>
+								<a href="zapatos.html" class="text-light">Zapatos</a>
+							</li>
+							<li>
+								<a href="nosotros.html" class="text-light">Nosotros</a>
+							</li>
+							<li>
+								<a href="contacto.html" class="text-light">Contacto</a>
+							</li>
+						</ul>
+
+					</div>
+
+					<!-- <hr class="clearfix w-100 d-md-none"> -->
+
+					<!-- Grid column -->
+
+					<div class="col-12 col-md-2 mb-md-0 mb-3">
+
+						<!-- Links -->
+						<h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-muted">Support</h5>
+
+						<ul class="list-unstyled">
+							<li>
+								<a href="#!" class="text-light">Service Discount</a>
+							</li>
+							<li>
+								<a href="#!" class="text-light">Student Discount</a>
+							</li>
+							<li>
+								<a href="#!" class="text-light">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#!" class="text-light">Terms & Conditions</a>
+							</li>
+							<li>
+								<a href="#!" class="text-light">Purchase a Digital Gift Card</a>
+							</li>
+
+						</ul>
+
+					</div>
+					<!-- Grid column -->
+					<!-- Grid row -->
+
+				</div>
+				<!-- Footer Links -->
+
+				<hr>
+
+				<!-- Call to action -->
+				<ul class="list-unstyled list-inline text-center py-2">
+									<!-- <li class="list-inline-item">
+										<h5 class="mb-1 text-light">Registrate</h5>
+									</li> -->
+									<li class="list-inline-item">
+										<a class="btn btn-danger btn-rounded" href="#signupmodal" data-toggle="modal" data-target="#signupmodal" data-dismiss="modal">Registrarse</a>
+									</li>
+								</ul>
+								<!-- Call to action -->
+
+								<hr>
+
+
+								<footer class="contenedor">
+									<div class="redes-sociales">
+										<div class="contenedor-icono">
+											<a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
+												<i class="fab fa-twitter"></i>
+											</a>
+										</div>
+										<div class="contenedor-icono">
+											<a href="http://www.facebook.com/falconmasters" target="_blank" class="facebook">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</div>
+										<div class="contenedor-icono">
+											<a href="http://www.instagram.com" target="_blank" class="instagram">
+												<i class="fab fa-instagram"></i>
+											</a>
+										</div>
+									</div>
+								</footer>
+								<!-- Copyright -->
+								<div class="footer-copyright text-center py-3 text-muted">© 2020 Copyright:
+									<a href="#" class="text-light"> Jorge Gp</a>
+								</div>
+								<!-- Copyright -->
+
+							</footer>
+							<!-- Footer -->
+						</div>
+					</div>
+					
+
+					<!-----------------------MODALS----------------------->
+
+
+					<!-- Modal -->
+					<div class="modal fade bd-example-modal-lg" id="md_showmore_products" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modal_title_product">Producto</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-6 col-lg-6">
+											<img src="" class="card-img" alt="not supported" id="img_modal_show">
+										</div>
+										<div class="col-md-6 col-lg-6">
+											<form action="#" class="form" id="form_compraview">
+												<div class="form-group text-center">
+													<h6 id="price_modal_val" class="text-info text-uppercase"></h6>
+												</div>											
+												<div class="form-group">
+													<label for="talla_prod">Talla</label>
+													<select class="form-control" id="talla_prod">
+														<option>L</option>
+														<option>S</option>
+														<option>M</option>
+														<option>Xl</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<label for="color_prod">Color</label>
+													<select class="form-control" id="color_prod">
+														<option>Blanco</option>
+														<option>Negro</option>
+														<option>Morado</option>
+														<option>Gris</option>
+													</select>
+												</div>
+												<div class="form-group">
+
+													<div class="form-group row">
+														<div class="col-sm-12 col-md-6">
+															<button class="btn" id="btn_minvalnm">
+																<i class="fas fa-minus"></i>
+															</button>
+															<span id="nm_buyb">1</span>
+															<button class="btn" id="btn_masvalnm">
+																<i class="fas fa-plus"></i>
+															</button>
+														</div>
+														<div class="col-sm-12 col-md-6">
+															<button type="button" class="btn btn-danger">
+																<i class="fas fa-shopping-cart text-white"> </i>
+															</button>
+															<button class="btn btn-secondary">
+																<i class="far fa-heart text-white"></i>
+															</button>
+														</div>
+													</div>
+
+												</div>
+												<button type="submit" class="btn btn-primary">Submit</button>
+
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!---MODAL LOGIN-->
+					<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Login</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form class="needs-validation p-4" novalidate>
+										<div class="form-row " >
+											<div class="col-md-12 mb-3">
+												<label for="valusername">Username</label>
+												<input type="text" class="form-control" id="valusername" value="Mark" required>
+
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="col-md-12 mb-3">
+												<label for="valpassword">Password</label>
+												<input type="password" class="form-control" id="valpassword" value="Mark" required>
+
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="remenberuserval">
+												<label class="form-check-label" for="remenberuserval">
+													Recordar nombre de usuario
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<button class="btn btn-info  btn-lg btn-block" type="submit">Login</button>
+										</div>
+										<div class="form-group">
+											<label class="form-check-label" for="gridCheck">
+												No tienes cuenta? <a  href="#signupmodal" data-toggle="modal" data-target="#signupmodal" data-dismiss="modal">Sign Up</a>
+											</label>
+										</div>
+									</form>
+
+									<script>
+										(function() {
+											'use strict';
+											window.addEventListener('load', function() {
+												var forms = document.getElementsByClassName('needs-validation');
+												var validation = Array.prototype.filter.call(forms, function(form) {
+													form.addEventListener('submit', function(event) {
+														if (form.checkValidity() === false) {
+															event.preventDefault();
+															event.stopPropagation();
+														}
+														form.classList.add('was-validated');
+													}, false);
+												});
+											}, false);
+										})();
+									</script>
+
+								</div>
+								<div class="modal-footer d-flex justify-content-center">
+							<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button> -->
+
+								<footer class="contenedor">
+									<div class="redes-sociales">
+										<div class="contenedor-icono">
+											<a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
+												<i class="fab fa-google"></i>
+											</a>
+										</div>
+										<div class="contenedor-icono">
+											<a href="http://www.facebook.com/falconmasters" target="_blank" class="facebook">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</div>
+										<div class="contenedor-icono">
+											<a href="http://www.instagram.com" target="_blank" class="instagram">
+												<i class="fab fa-instagram"></i>
+											</a>
+										</div>
+									</div>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- modal sign up -->
+				<div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<style>
+									#nettosignup{
+										background-image: url("https://lh3.googleusercontent.com/proxy/SunxWkKY6v_RjQPWzSPBVvBRXTAV3B7Omf1ahqu5t2p_Yhy8p2Y6bl9Rpm_WEkiKP_VT8b-YX5QOd9W4Qta-y8klDYQJOrJDntPQn3pHicfp_XCQKqeljbKh_ktU");
+										background-repeat: no-repeat;
+										background-size: 100% 100%;
+
+									}
+								</style>
+
+								<div class="row no-gutters">
+									<div class="col-md-6">
+										<div class="card-body">
+											<form class="needs-validation " novalidate>
+												<div class="form-group">
+													<!-- <div class="col-md-12 mb-3"> -->
+														<label for="valusernamesp">Username</label>
+														<input type="text" class="form-control" id="valusernamesp" value="Mark" required>
+														<!-- </div> -->
+													</div>
+													<div class="form-group">
+														<!-- <div class="col-md-12 mb-3"> -->
+															<label for="valemailregister">E-mail</label>
+															<input type="email" class="form-control" id="valemailregister"  required>
+															<!-- </div> -->
+														</div>
+														<div class="form-group">
+															<!-- <div class="col-md-12 mb-3"> -->
+																<label for="valpassregiser">Password</label>
+																<input type="password" class="form-control" id="valpassregiser" value="Mark" required>
+																<!-- </div> -->
+															</div>
+															<div class="form-group">
+																<!-- <div class="col-md-12 mb-3"> -->
+																	<label for="valpassregister2">Confirm Password</label>
+																	<input type="password" class="form-control" id="valpassregister2" value="Mark" required>
+																	<!-- </div> -->
+																</div>
+																<div class="form-group">
+																	<button class="btn btn-info  btn-lg btn-block" type="submit">Sign Up</button>
+																</div>
+																<div class="form-group">
+																	<label class="form-check-label" for="gridCheck">
+																		Ya tienes cuenta? <a  href="#loginmodal" data-toggle="modal" data-target="#loginmodal" data-dismiss="modal">Login</a>
+																	</label>
+																</div>
+															</form>
+
+															<script>
+																(function() {
+																	'use strict';
+																	window.addEventListener('load', function() {
+																		var forms = document.getElementsByClassName('needs-validation');
+																		var validation = Array.prototype.filter.call(forms, function(form) {
+																			form.addEventListener('submit', function(event) {
+																				if (form.checkValidity() === false) {
+																					event.preventDefault();
+																					event.stopPropagation();
+																				}
+																				form.classList.add('was-validated');
+																			}, false);
+																		});
+																	}, false);
+																})();
+															</script>
+														</div>
+													</div>
+													<div class="col-md-6 "  id="nettosignup">
+														<div class="row mx-auto  row-cols-md-3 py-5 mt-4 pt-4">
+															<div class="col col-12 col-md-12 mb-4 mt-4">
+																<button class="btn btn-info btn-lg btn-block">Sign Up with Facebook</button>
+															</div>
+
+															<div class="col col-12 col-md-12 mb-4 mt-4">
+																<button class="btn btn-warning btn-lg btn-block">Sign Up with Google</button>
+															</div>
+
+															<div class="col col-12 col-md-12 mb-4 mt-4">
+																<button class="btn btn-danger btn-lg btn-block">Sign Up with Instagram</button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+						<!-- 	<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div> -->
+						</div>
+					</div>
+				</div>
+
+
+
+				<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+				</script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+				</script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+				</script>
+				<script src="js/modelview.js"></script>
+				<script src="js/formview.js"></script>
+			</body>
+			</html>
